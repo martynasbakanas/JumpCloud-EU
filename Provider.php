@@ -13,12 +13,12 @@ class Provider extends AbstractProvider
 
     protected function getAuthUrl($state): string
     {
-        return $this->buildAuthUrlFromBase('https://oauth.id.jumpcloud.com/oauth2/auth', $state);
+        return $this->buildAuthUrlFromBase('https://oauth.id.eu.jumpcloud.com/oauth2/auth', $state);
     }
 
     protected function getTokenUrl(): string
     {
-        return 'https://oauth.id.jumpcloud.com/oauth2/token';
+        return 'https://oauth.id.eu.jumpcloud.com/oauth2/token';
     }
 
     /**
@@ -49,7 +49,7 @@ class Provider extends AbstractProvider
      */
     protected function getUserByToken($token)
     {
-        $response = $this->getHttpClient()->get('https://oauth.id.jumpcloud.com/userinfo', [
+        $response = $this->getHttpClient()->get('https://oauth.id.eu.jumpcloud.com/userinfo', [
             RequestOptions::HEADERS => [
                 'Authorization' => 'Bearer '.$token,
             ],

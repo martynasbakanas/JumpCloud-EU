@@ -1,3 +1,22 @@
+## Changes
+
+This repository contains updated auth url's to work in EU.
+
+Jumpcloud doesn't really provide this information but if you are logged in into your jumpcloud account and you are in `console.eu.jumpcloud.com`, to use SSO you'll need to use `https://oauth.id.eu.jumpcloud.com` instead of `https://oauth.id.jumpcloud.com`
+
+This fork does exactly that.
+
+
+### Add configuration to `config/services.php`
+
+```php
+'jumpcloud' => [
+    'client_id' => env('JUMPCLOUD_CLIENT_ID'),
+    'client_secret' => env('JUMPCLOUD_CLIENT_SECRET'),
+    'redirect' => env('JUMPCLOUD_REDIRECT_URI')
+],
+```
+
 # JumpCloud
 
 ```bash
