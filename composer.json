@@ -1,5 +1,5 @@
 {
-    "name": "socialiteproviders/jumpcloud",
+    "name": "martynasbakanas/jumpcloud-eu",
     "description": "JumpCloud OpenID Connect (OIDC) Provider for Laravel Socialite",
     "license": "MIT",
     "keywords": [
@@ -13,8 +13,8 @@
     ],
     "authors": [
         {
-            "name": "Yevhen Salitrynskyi",
-            "email": "ysalitrynskyi@gmail.com"
+            "name": "Martynas Bakanas",
+            "email": "info@stuff.lt"
         }
     ],
     "support": {
